@@ -37,6 +37,18 @@ namespace CompanyApplication
                         case (int)MyEnums.Menus.UpdateCompany:
                         companyController.Update();
                         break;
+                       case (int)MyEnums.Menus.DeleteCompany:
+                        companyController.Delete();
+                        break;
+                    case (int)MyEnums.Menus.GetCompanyById:
+                        companyController.GetById();
+                        break;
+                    case (int)MyEnums.Menus.GetAllCompanyByName:
+                        companyController.GetAllByName();
+                        break;
+                    case (int)MyEnums.Menus.GetAllCompany:
+                        companyController.GetAll();
+                        break;
 
                     }
             }

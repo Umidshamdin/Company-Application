@@ -112,7 +112,7 @@ namespace CompanyApplication.Conroller
                 }
                 else
                 {
-                    Helpers.WriteToConsole(ConsoleColor.Green, $"{company.Name} - {company.Name}");
+                    Helpers.WriteToConsole(ConsoleColor.Green, $"{company.Name} - {company.Id}");
                 }
             }
             else
@@ -120,6 +120,66 @@ namespace CompanyApplication.Conroller
                 Helpers.WriteToConsole(ConsoleColor.Yellow, "Try again");
                 goto EnterId;
             };
+        }
+
+        public void Delete()
+        {
+            Helpers.WriteToConsole(ConsoleColor.Red, "Add Company Id");
+        EnterId: string companyId = Console.ReadLine();
+            int Id;
+            bool isIdTrue = int.TryParse(companyId, out Id);
+
+
+
+            if (isIdTrue)
+            {
+                var company = _companyService.GetById(Id);
+                if (company == null)
+                {
+                    Helpers.WriteToConsole(ConsoleColor.Red, "try again:");
+                }
+                else
+                {
+                    _companyService.Delete(company);
+                    Helpers.WriteToConsole(ConsoleColor.Green, $"Company is deleteed");
+                }
+            }
+            else
+            {
+                Helpers.WriteToConsole(ConsoleColor.Yellow, "Try again");
+                goto EnterId;
+            };
+        }
+        public void GetAllByName()
+        {
+
+
+            Helpers.WriteToConsole(ConsoleColor.Red, "Add Company name:");
+            string name = Console.ReadLine();
+            var companies = _companyService.GetAllByName(name);
+            foreach (var item in companies)
+            {
+                if (companies == null)
+                {
+                    Helpers.WriteToConsole(ConsoleColor.Yellow, "Company is not found");
+
+                }
+                else
+                {
+                    Helpers.WriteToConsole(ConsoleColor.Green, $"{item.Name} - {item.Id})- {item.Address}");
+                }
+
+
+            }
+        }
+        public void GetAll()
+        {
+            var company = _companyService.GetAll();
+            foreach (var item in company)
+            {
+                Helpers.WriteToConsole(ConsoleColor.Green, $"{item.Name} - {item.Id})- {item.Address}");
+
+            }
         }
     }   }  
 

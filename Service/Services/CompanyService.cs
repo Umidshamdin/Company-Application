@@ -41,9 +41,15 @@ namespace Service.Services
             return model;
         }
 
-        void ICompanyService.Delete(Company model)
+        public void Delete(Company company)
         {
-            throw new NotImplementedException();
+            _companyRepository.Delete(company);
+        }
+
+        public List<Company> GetAllByName(string name)
+        {
+            return _companyRepository.GetAll(m => m.Name == name);
+            
         }
 
         Company ICompanyService.Get(Predicate<Company> filter)
@@ -51,9 +57,9 @@ namespace Service.Services
             throw new NotImplementedException();
         }
 
-        List<Company> ICompanyService.GetAll(Predicate<Company> filter)
+        public List<Company>GetAll()
         {
-            throw new NotImplementedException();
+            return _companyRepository.GetAll(null);
         }
     }
 }
