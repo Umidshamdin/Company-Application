@@ -8,11 +8,11 @@ namespace Service.Services.Interfaces
     public interface ICompanyService
     {
         Company Create(Company model);
-        Company Update(int Id,Company model);
+        Company Update(int id,Company model);
+        void Delete(Company company);
+        Company GetById(int id);
+        List<Company> GetAll();
+        List<Company> GetAllByName(string name);
 
-        void Delete(Company model);
-        Company Get(Predicate<Company> filter);
-        List<Company> GetAll(Predicate<Company> filter);
-        
     }
 }

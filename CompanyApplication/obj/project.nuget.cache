@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "MDCX4rF8nnjoMjeBsftD36z/1wm3llAyukGtHyS/U9HduTDQUbMYqbZONFd6LxUu7RaXK/+2KlJWlklvdtzqoA==",
+  "dgSpecHash": "ScYjXcfdRh7ctOBNNLtcZEknSEors30F588RfejWIFqqHZhPWAnO6k2OTyei04DrvzUETEE2OVJtUt2QhA/xew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Umid\\Desktop\\Company Application\\CompanyApplication\\CompanyApplication\\CompanyApplication.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\CompanyApplication\\CompanyApplication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Umid\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -4,9 +4,8 @@ using System.Text;
 
 namespace Service.Helpers
 {
-    public class MyEnums
+    public class MyEnum
     {
-
         public enum Menus
         {
             CreateCompany=1,
@@ -20,7 +19,7 @@ namespace Service.Helpers
             GetEmployeeById,
             DeleteEmployee,
             GetEmployeeByAge,
-            GetAllEmployeeByCompanyId,
+            GetAllEmployeeByCompanyId
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pL893L9SGCgzctaop4k660Kk76GrE2wUoPxcaqz4w9eH7kvF1HMBytsPbd1YbFCvzSj6jCakyM3pKpAWqMgs+Q==",
+  "dgSpecHash": "1hNEcPoKXkYR6nozRe00S6qv3+7aZYM0QUkeY1KaQLzdK+3+TSOUQKQGQdXFib+ttTX5ZdoKBJ4fy5AXhw2S+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Umid\\Desktop\\Company Application\\CompanyApplication\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

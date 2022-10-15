@@ -15,19 +15,45 @@ namespace Repository.Implementation
             try
             {
                 if (entity == null)
+                {
                     throw new CustomException("Entity is null");
-                AppDbContext<Company>.datas.Add(entity);
-                return true;
-
+                }
+                else
+                {
+                    AppDbContext<Company>.data.Add(entity);
+                    return true;
+                }
             }
             catch (Exception ex)
             {
-
                 Console.WriteLine(ex.Message);
                 return false;
             }
         }
 
+        public bool Delete(Company entity)
+        {
+            try
+            {
+                AppDbContext<Company>.data.Remove(entity);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
+        public Company Get(Predicate<Company> predicate = null)
+        {
+            return predicate==null ? AppDbContext<Company>.data[0]: AppDbContext<Company>.data.Find(predicate);
+        }
+
+        public List<Company> GetAll(Predicate<Company> predicate)
+        {
+            return predicate == null ? AppDbContext<Company>.data : AppDbContext<Company>.data.FindAll(predicate);
+        }
 
         public bool Update(Company entity)
         {
@@ -37,17 +63,20 @@ namespace Repository.Implementation
                 if (company != null)
                 {
                     if (!string.IsNullOrEmpty(entity.Name))
+                    {
                         company.Name = entity.Name;
-                    if (!string.IsNullOrEmpty(entity.Address))
-                        company.Address = entity.Address;
+                    }
 
-                        return true;
+                    if (!string.IsNullOrEmpty(entity.Address))
+                    {
+                        company.Address = entity.Address;
+                    }
+                    return true;
                 }
                 else
                 {
                     return false;
                 }
-
             }
             catch (Exception ex)
             {
@@ -55,31 +84,5 @@ namespace Repository.Implementation
                 return false;
             }
         }
-        public bool Delete(Company entity)
-        {
-            try
-            {
-                AppDbContext<Company>.datas.Remove(entity);
-                return true;
-
-            }
-            catch (Exception ex)
-            {
-
-                Console.WriteLine(ex.Message);
-                return false;
-            }
-        }
-
-        public Company Get(Predicate<Company> filter)
-        {
-            return filter == null ? AppDbContext<Company>.datas[0] : AppDbContext<Company>.datas.Find(filter);
-        }
-
-        public List<Company> GetAll(Predicate<Company> filter)
-        {
-            return filter == null ? AppDbContext<Company>.datas : AppDbContext<Company>.datas.FindAll(filter);
-        }
-
     }
 }

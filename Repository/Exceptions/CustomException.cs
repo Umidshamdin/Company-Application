@@ -4,12 +4,11 @@ using System.Text;
 
 namespace Repository.Exceptions
 {
-    public class CustomException: Exception
+    public class CustomException:Exception
     {
+        public CustomException(string msj):base(msj)
+        {
 
-        public CustomException(string msj) : base(msj) { }
-        
-
-        
+        }
     }
 }

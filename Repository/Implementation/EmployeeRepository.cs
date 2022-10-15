@@ -8,59 +8,54 @@ using System.Text;
 
 namespace Repository.Implementation
 {
-    class EmployeeRepository : IRepository<Employee>
+    public class EmployeeRepository : IRepository<Employee>
     {
         public bool Create(Employee entity)
         {
             try
             {
-                if (entity == null)
+                if(entity == null)
+                {
                     throw new CustomException("Entity is null");
-                AppDbContext<Employee>.datas.Add(entity);
-                return true;
-
+                }
+                else
+                {
+                    AppDbContext<Employee>.data.Add(entity);
+                    return true;
+                }
             }
             catch (Exception ex)
             {
-
                 Console.WriteLine(ex.Message);
                 return false;
             }
-
-
-
         }
 
-        bool IRepository<Employee>.Delete(Employee entity)
+        public bool Delete(Employee entity)
         {
-
             try
             {
-                AppDbContext<Employee>.datas.Remove(entity);
+                AppDbContext<Employee>.data.Remove(entity);
                 return true;
-
             }
             catch (Exception ex)
             {
 
                 Console.WriteLine(ex.Message);
                 return false;
+
             }
         }
-
         public Employee Get(Predicate<Employee> filter)
         {
-            return filter == null ? AppDbContext<Employee>.datas[0] : AppDbContext<Employee>.datas.Find(filter);
+            return filter == null ? AppDbContext<Employee>.data[0] : AppDbContext<Employee>.data.Find(filter);
         }
-
         public List<Employee> GetAll(Predicate<Employee> filter)
         {
-            return filter == null ? AppDbContext<Employee>.datas : AppDbContext<Employee>.datas.FindAll(filter);
+            return filter == null ? AppDbContext<Employee>.data : AppDbContext<Employee>.data.FindAll(filter);
         }
-
         public bool Update(Employee entity)
         {
-
             try
             {
                 var employee = Get(m => m.Id == entity.Id);
@@ -68,8 +63,10 @@ namespace Repository.Implementation
                 {
                     if (!string.IsNullOrEmpty(entity.Name))
                         employee.Name = entity.Name;
+
                     if (!string.IsNullOrEmpty(entity.SurName))
                         employee.SurName = entity.SurName;
+
                     if (!string.IsNullOrEmpty(entity.Age.ToString()))
                         employee.Age = entity.Age;
 
@@ -79,7 +76,6 @@ namespace Repository.Implementation
                 {
                     return false;
                 }
-
             }
             catch (Exception ex)
             {
