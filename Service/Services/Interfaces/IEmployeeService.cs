@@ -11,7 +11,6 @@ namespace Service.Services.Interfaces
         public void Delete(Employee employee);
         Employee GetById(int employeeId);
         public List<Employee> GetByAge(int age);
-
         public Employee Update(int id, Employee entity);
         List<Employee> GetAllById(int id);
     }

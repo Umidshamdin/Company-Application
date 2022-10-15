@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Repository\\Repository.csproj",
+      "projectUniqueName": "C:\\Users\\Umid\\Desktop\\Company-Application\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Repository\\Repository.csproj",
+      "projectPath": "C:\\Users\\Umid\\Desktop\\Company-Application\\Repository\\Repository.csproj",
       "packagesPath": "C:\\Users\\Umid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Repository\\obj\\",
+      "outputPath": "C:\\Users\\Umid\\Desktop\\Company-Application\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Umid\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Domain\\Domain.csproj"
+            "C:\\Users\\Umid\\Desktop\\Company-Application\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Umid\\Desktop\\Company-Application\\Domain\\Domain.csproj"
             }
           }
         }

@@ -26,17 +26,14 @@ namespace Service.Services
         {
             _companyRepository.Delete(company);
         }
-
         public Company GetById(int id)
         {
             return _companyRepository.Get(m => m.Id == id);
         }
-
         public List<Company> GetAll()
         {
             return _companyRepository.GetAll(null);
         }
-
         public Company Update(int id, Company model)
         {
             var company = GetById(id);
@@ -44,7 +41,6 @@ namespace Service.Services
             _companyRepository.Update(model);
             return model;
         }
-
         public List<Company> GetAllByName(string name)
         {
            return _companyRepository.GetAll(m => m.Name == name);

@@ -63,7 +63,6 @@ namespace CompanyApplication.Controller
                 goto EnterId;
             }
         }
-
         public void Delete()
         {
             Helper.WriteToConsole(ConsoleColor.Cyan, "Add Company Id");
@@ -71,6 +70,7 @@ namespace CompanyApplication.Controller
             EnterId: string companyId = Console.ReadLine();
             int id;
             bool isTrueId = int.TryParse(companyId, out id);
+
             if (isTrueId)
             {
                 var company = _companyService.GetById(id);
@@ -91,7 +91,6 @@ namespace CompanyApplication.Controller
                 goto EnterId;
             }
         }
-
         public void GetAll()
         {
             var companies = _companyService.GetAll();
@@ -101,7 +100,6 @@ namespace CompanyApplication.Controller
                 Console.WriteLine(item.Id + "-" + item.Name + "-" + item.Address);
             }
         }
-
         public void GetAllCompanyByName()
         {
             Helper.WriteToConsole(ConsoleColor.Green, "Add Company Name");
@@ -123,12 +121,8 @@ namespace CompanyApplication.Controller
                     Helper.WriteToConsole(ConsoleColor.Red, "There is not found this company");
                     return;
                 }
-            }
-          
-
-                     
+            }                   
         }
-
         public void Update()
         {
             Helper.WriteToConsole(ConsoleColor.Cyan, "Add company id");

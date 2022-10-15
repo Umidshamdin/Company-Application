@@ -43,7 +43,6 @@ namespace Repository.Implementation
 
                 Console.WriteLine(ex.Message);
                 return false;
-
             }
         }
         public Employee Get(Predicate<Employee> filter)

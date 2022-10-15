@@ -19,6 +19,7 @@ namespace CompanyApplication
                 string selectOption = Console.ReadLine();
                 int option;
                 bool isTrueOption = int.TryParse(selectOption, out option);
+
                 if (isTrueOption)
                 {
                     switch (option)

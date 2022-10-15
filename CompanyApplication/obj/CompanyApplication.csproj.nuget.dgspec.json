@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\CompanyApplication\\CompanyApplication.csproj": {}
+    "C:\\Users\\Umid\\Desktop\\Company-Application\\CompanyApplication\\CompanyApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\CompanyApplication\\CompanyApplication.csproj": {
+    "C:\\Users\\Umid\\Desktop\\Company-Application\\CompanyApplication\\CompanyApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\CompanyApplication\\CompanyApplication.csproj",
+        "projectUniqueName": "C:\\Users\\Umid\\Desktop\\Company-Application\\CompanyApplication\\CompanyApplication.csproj",
         "projectName": "CompanyApplication",
-        "projectPath": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\CompanyApplication\\CompanyApplication.csproj",
+        "projectPath": "C:\\Users\\Umid\\Desktop\\Company-Application\\CompanyApplication\\CompanyApplication.csproj",
         "packagesPath": "C:\\Users\\Umid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\CompanyApplication\\obj\\",
+        "outputPath": "C:\\Users\\Umid\\Desktop\\Company-Application\\CompanyApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Umid\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Service\\Service.csproj"
+              "C:\\Users\\Umid\\Desktop\\Company-Application\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\Umid\\Desktop\\Company-Application\\Service\\Service.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Domain\\Domain.csproj": {
+    "C:\\Users\\Umid\\Desktop\\Company-Application\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Umid\\Desktop\\Company-Application\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Umid\\Desktop\\Company-Application\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Umid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Umid\\Desktop\\Company-Application\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Umid\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -122,14 +122,14 @@
         }
       }
     },
-    "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Repository\\Repository.csproj": {
+    "C:\\Users\\Umid\\Desktop\\Company-Application\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Umid\\Desktop\\Company-Application\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Users\\Umid\\Desktop\\Company-Application\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\Umid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Repository\\obj\\",
+        "outputPath": "C:\\Users\\Umid\\Desktop\\Company-Application\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Umid\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -146,8 +146,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Domain\\Domain.csproj"
+              "C:\\Users\\Umid\\Desktop\\Company-Application\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Umid\\Desktop\\Company-Application\\Domain\\Domain.csproj"
               }
             }
           }
@@ -180,14 +180,14 @@
         }
       }
     },
-    "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Service\\Service.csproj": {
+    "C:\\Users\\Umid\\Desktop\\Company-Application\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\Umid\\Desktop\\Company-Application\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Service\\Service.csproj",
+        "projectPath": "C:\\Users\\Umid\\Desktop\\Company-Application\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\Umid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Service\\obj\\",
+        "outputPath": "C:\\Users\\Umid\\Desktop\\Company-Application\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Umid\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -204,11 +204,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Domain\\Domain.csproj"
+              "C:\\Users\\Umid\\Desktop\\Company-Application\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Umid\\Desktop\\Company-Application\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\Umid\\Desktop\\Console Project\\Company-Application\\Repository\\Repository.csproj"
+              "C:\\Users\\Umid\\Desktop\\Company-Application\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Umid\\Desktop\\Company-Application\\Repository\\Repository.csproj"
               }
             }
           }

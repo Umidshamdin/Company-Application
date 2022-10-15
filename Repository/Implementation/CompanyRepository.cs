@@ -30,7 +30,6 @@ namespace Repository.Implementation
                 return false;
             }
         }
-
         public bool Delete(Company entity)
         {
             try
@@ -44,17 +43,14 @@ namespace Repository.Implementation
                 return false;
             }
         }
-
         public Company Get(Predicate<Company> predicate = null)
         {
             return predicate==null ? AppDbContext<Company>.data[0]: AppDbContext<Company>.data.Find(predicate);
         }
-
         public List<Company> GetAll(Predicate<Company> predicate)
         {
             return predicate == null ? AppDbContext<Company>.data : AppDbContext<Company>.data.FindAll(predicate);
         }
-
         public bool Update(Company entity)
         {
             try
